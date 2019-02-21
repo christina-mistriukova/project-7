@@ -1,0 +1,371 @@
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(font/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-Black;
+  src: url(font/Montserrat-Black.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(font/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(font/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url(font/Montserrat-Regular.ttf);
+}
+.main-wrapper {
+  position: relative;
+  max-width: 1440px;
+  height: 808px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  background-image: url(./imgs/bg.png);
+  overflow: hidden;
+}
+.main-wrapper .header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88px;
+}
+.main-wrapper .header-wrapper .img-header {
+  z-index: 2;
+  position: absolute;
+}
+.main-wrapper .header-wrapper .img-header img {
+  width: 190px;
+}
+.main-wrapper .header-wrapper .bg-header {
+  height: 88px;
+  background-color: #000000;
+  opacity: 0.2;
+  position: relative;
+  width: 100%;
+}
+.main-wrapper .top-title-wrapper {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 13px;
+}
+.main-wrapper .top-title-wrapper .top-title {
+  font-family: Montserrat-Medium;
+  font-size: 27px;
+  color: black;
+  letter-spacing: 2.5px;
+  font-weight: bold;
+}
+.main-wrapper .top-title-wrapper .color-title {
+  line-height: 65px;
+  font-size: 89px;
+  font-family: Montserrat-Black;
+  color: #f3e53b;
+  -webkit-text-stroke: 1px #dcc515;
+  text-shadow: 0px 5px 5px rgba(0, 0, 1, 0.19);
+}
+.main-wrapper .left-side-wrapper {
+  max-width: 1275px;
+  margin: 0 auto;
+  display: flex;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 58px;
+  margin-right: 20px;
+  margin-left: 70px;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus {
+  width: 440px;
+  min-height: 185px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus.bg-bonus {
+  background-repeat: no-repeat;
+  background-image: url(./imgs/bg_bonus.png);
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-wrapper {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text {
+  padding-left: 20px;
+  font-size: 43px;
+  font-family: Arial;
+  max-width: 295px;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text .first-word {
+  font-family: Montserrat-Bold;
+  font-weight: bolder;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text .formula span {
+  display: inline-block;
+  font-size: 62px;
+  font-family: Arial;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text .formula span sup, .main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text .formula span sub {
+  display: block;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text .formula span sup {
+  top: -0.6em;
+  font-size: 32px;
+  font-weight: 900;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text .formula span sub {
+  top: 0.4em;
+  font-size: 20px;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number {
+  font-size: 64px;
+  font-weight: 900;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number.small-letter-spacing {
+  letter-spacing: -12px;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number.bigger-letter-spacing {
+  letter-spacing: -5px;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number.sign-nmbr {
+  display: flex;
+  align-items: center;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number.sign-nmbr sup {
+  font-size: 32px;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number.sign-nmbr sub {
+  font-size: 32px;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number.timer-clock {
+  font-family: Montserrat-Bold;
+}
+.main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-bottom-text {
+  margin-top: -8px;
+  max-width: 295px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-family: Montserrat-Regular;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper {
+  margin-top: 43px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 470px;
+  z-index: 5;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .get-your-present-text {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  max-width: 340px;
+  font-size: 23px;
+  font-family: Montserrat-Bold;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .timer-span {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 23px;
+  font-family: Montserrat-Bold;
+  margin: 10px 0;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .timer-span.first-string {
+  margin: 0;
+  font-family: Montserrat-Medium;
+  font-size: 26px;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: Montserrat-SemiBold;
+  font-size: 21px;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper button.registation-button {
+  background-image: url(./imgs/button-bg.png);
+  color: #ffffff;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .img-timer-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .img-timer-wrapper .img-timer {
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 88px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  font-family: Montserrat-Bold;
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .img-timer-wrapper .img-timer.first {
+  background-image: url(./imgs/first-timer.png);
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .img-timer-wrapper .img-timer.second {
+  background-image: url(./imgs/second-timer.png);
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .img-timer-wrapper .img-timer.last {
+  background-image: url(./imgs/third-timer.png);
+}
+.main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper .img-timer-wrapper .img-timer .number {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-wrapper .left-side-wrapper .wizard-wrapper {
+  position: absolute;
+  right: 10px;
+  bottom: 3px;
+  background-image: url(./imgs/wizard.png);
+  width: 750px;
+  height: 611px;
+}
+.main-wrapper .left-side-wrapper .wizard-wrapper .img-present-wrapper {
+  position: absolute;
+  top: 132px;
+}
+.main-wrapper footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #404b50;
+  height: 52px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-family: Montserrat-Regular;
+}
+.main-wrapper footer span {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 800px) {
+  .color-title {
+    font-size: 10vw !important;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .wizard-wrapper {
+    right: 0 !important;
+    bottom: -30px !important;
+    background-image: url(./imgs/wizard2.png) !important;
+    width: 645px !important;
+    height: 600px;
+  }
+
+  .bonus.bg-bonus {
+    background-repeat: no-repeat;
+    background-image: url(./imgs/small_bg_bonus.png) !important;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text {
+    padding-left: 0 !important;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper {
+    margin-right: 0px !important;
+    margin-top: 100px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .unique-present-wrapper {
+    margin-left: -74px;
+  }
+
+  .main-wrapper .left-side-wrapper .unique-present-wrapper {
+    margin-top: 20px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .unique-present-wrapper .timer-wrapper {
+    margin-bottom: -62px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper .bonus .bonus-text span.number {
+    font-size: 54px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper .bonus {
+    margin-bottom: 0 !important;
+  }
+
+  footer {
+    max-height: 20px;
+  }
+  footer span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .main-wrapper {
+    height: 995px;
+    background-size: cover;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper {
+    margin-left: 0 !important;
+    margin-top: 40px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .wizard-wrapper {
+    background-image: url(./imgs/wizard3.png) !important;
+    height: 851px !important;
+    right: -224px !important;
+    bottom: -20px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .unique-present-wrapper {
+    height: 600px !important;
+    position: absolute;
+    left: 33%;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper {
+    margin-top: 93px !important;
+  }
+
+  .main-wrapper .left-side-wrapper .bonuses-wrapper .bonus.bg-bonus {
+    background-image: url(./imgs/bg_bonus.png) !important;
+  }
+
+  footer {
+    max-height: 50px;
+  }
+  footer span {
+    display: inline-block !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
